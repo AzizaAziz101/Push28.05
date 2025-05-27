@@ -1,0 +1,183 @@
+/* ============ Global Styles ============ */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #000;
+}
+
+/* ============ Header ============ */
+.header {
+    background-color: #FFD700;
+    height: 45px; /* kleiner als vorher */
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 0.9rem; /* kleinere Schriftgröße im Header */
+}
+
+.header-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;     /* kein Zeilenumbruch */
+    overflow-x: auto;      /* horizontal scroll bei Bedarf */
+}
+
+.header .brand a {
+    font-size: 1.1rem; /* kleiner als vorher */
+    font-weight: 600;
+    color: #1d999f;
+    white-space: nowrap;
+    margin-right: 15px;
+}
+
+.topbar {
+    display: flex;
+    gap: 10px;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.topbar a {
+    color: #1d999f;
+    font-weight: 500;
+    font-size: 0.85rem; /* kleinere Schrift */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 10px;
+}
+
+.topbar a:hover {
+    color: #4a8898;
+}
+
+/* ============ Section Header ============ */
+.section-header h1 {
+    text-align: center;
+}
+.section-header h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.img-fluid.rounded {
+    border-radius: 1.5rem; /* z.B. 1.5rem für größere Rundung */
+}
+
+
+/* ============ Footer ============ */
+.footer {
+    background-color: #FFD700;
+    color: #1d999f;
+    padding: 40px 0 20px;
+    font-size: 15px;
+    
+}
+
+.footer p {
+  color: #1d999f;
+}
+.footer h2 {
+    color: #1d999f;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer a {
+    color: #1d999f;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .form-control {
+    margin-top: 10px;
+    border: none;
+    border-radius: 0;
+}
+
+.footer .btn {
+    margin-top: 10px;
+    background-color: #1d999f;
+    color: #FFD700;
+    border: none;
+    border-radius: 0;
+    padding: 6px 12px;
+}
+
+.footer .btn:hover {
+    background-color: #222;
+}
+
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #FFD662;
+    color: #000000;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    border-radius: 5px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 9;
+}
+
+.back-to-top:hover {
+    color: #ffffff;
+    background: #00539C;
+}
+
+.back-to-top i {
+    padding-top: 10px;
+}
+
+
+/* ============ Responsive ============ */
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
+
+    .header-nav {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .topbar a {
+        font-size: 0.8rem;
+    }
+
+    .footer .row > div {
+        margin-bottom: 20px;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+}
